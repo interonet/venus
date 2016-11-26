@@ -1,0 +1,31 @@
+spring:
+  logging:
+    level:
+      root: DEBUG
+      org.springframework.core : FATAL
+      org.springframework.beans: FATAL
+      org.springframework.context: FATAL
+      org.springframework.transaction: ERROR
+      org.springframework.test: DEBUG
+      org.springframework.web: DEBUG
+      org.hibernate: ERROR
+
+
+  datasource:
+    url: jdbc:mysql://venus.shuolingdeng.com:23306/test
+    username: test
+    password: siW-!8#X
+    driver-class-name: com.mysql.jdbc.Driver
+
+  redis:
+    user:
+      database: 0
+      host: venus.shuolingdeng.com
+      port: 26379
+      password: siW-!8#X
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+debug: true
